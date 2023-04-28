@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/test-lytvyn/static/css/main.7acaea2f.css",
-    "main.js": "/test-lytvyn/static/js/main.07d3183d.js",
+    "main.css": "/test-lytvyn/static/css/main.ec3947ff.css",
+    "main.js": "/test-lytvyn/static/js/main.e1a108d2.js",
+    "static/media/picture.png": "/test-lytvyn/static/media/picture.032662a2a907475127d7.png",
+    "static/media/Logo.svg": "/test-lytvyn/static/media/Logo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/test-lytvyn/index.html",
-    "main.7acaea2f.css.map": "/test-lytvyn/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/test-lytvyn/static/js/main.07d3183d.js.map"
+    "main.ec3947ff.css.map": "/test-lytvyn/static/css/main.ec3947ff.css.map",
+    "main.e1a108d2.js.map": "/test-lytvyn/static/js/main.e1a108d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.ec3947ff.css",
+    "static/js/main.e1a108d2.js"
   ]
 }
