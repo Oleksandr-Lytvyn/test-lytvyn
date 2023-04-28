@@ -22,3 +22,7 @@ button {
   line-height: 22px;
   text-transform: uppercase;
 }
+
+p {
+  margin: 0 0;
+}

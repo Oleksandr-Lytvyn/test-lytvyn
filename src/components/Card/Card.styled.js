@@ -3,6 +3,10 @@ import logo from '../../images/Logo.svg';
 import bgImage from '../../images/picture.png';
 
 export const CardMain = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 480px;
   width: 380px;
   height: 460px;
   background-image: url(${logo}), url(${bgImage}),
@@ -11,4 +15,13 @@ export const CardMain = styled.div`
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: 20px 20px, 50% 28px, 0;
+`;
+
+export const Box = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 `;

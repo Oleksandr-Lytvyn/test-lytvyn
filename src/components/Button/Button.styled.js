@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const ButtonCard = styled.button`
+  margin-bottom: 36px;
+  width: 196px;
   display: flex;
   flex-direction: row;
   justify-content: center;
