@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import boyImage from '../../images/Boy.jpg';
+// import boyImage from '../../images/Boy.jpg';
 
 export const BoyWrapper = styled.div`
   width: 100%;
