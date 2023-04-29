@@ -34,7 +34,7 @@ export const AvatarImg = styled.div`
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url(${boyImage});
+  background-image: url(${props => props.url});
   background-position: -5px 0;
   /* background-size: cover; */
 `;

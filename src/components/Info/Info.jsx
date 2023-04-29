@@ -1,10 +1,10 @@
 import { InfoBoard } from './Info.styled';
 
-export const Info = () => {
+export const Info = ({ tweets, followers }) => {
   return (
     <InfoBoard>
-      <p>ukukukuk</p>
-      <p>sesesese</p>
+      <p>{tweets} tweets</p>
+      <p>{followers} followers</p>
     </InfoBoard>
   );
 };

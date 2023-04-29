@@ -3,11 +3,11 @@ import { Line } from './Avatar.styled';
 
 import ava from '../../images/Boy.jpg';
 
-export const Avatar = () => {
+export const Avatar = ({ url }) => {
   return (
     <AvatarWrapper>
       <Line></Line>
-      <AvatarImg></AvatarImg>
+      <AvatarImg url={url}></AvatarImg>
     </AvatarWrapper>
   );
 };

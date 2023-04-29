@@ -3,31 +3,23 @@ import { Box, CardMain } from './Card.styled';
 import { ButtonCard } from 'components/Button/Button.styled';
 import { Avatar } from 'components/Avatar/Avatar';
 import { Info } from 'components/Info/Info';
-
-import axios from 'axios';
 import { useState } from 'react';
 
-const fetchData = async () => {
-  const data = await axios.get(
-    'https://63bf12e0e348cb07622066df.mockapi.io/users'
-  );
-  console.log(data);
-};
+export const Card = ({ user }) => {
+  const [isFollow, setIsFollow] = useState(false);
 
-fetchData();
-
-export const Card = () => {
-  const [tweets, setTweets] = useState();
-  const [followers, setFollowers] = useState();
-  const [ava, setAva] = useState();
+  let followers = user.followers;
+  if (isFollow) {
+    followers += 1;
+  }
 
   return (
     <CardMain>
       {/* <Boy></Boy> */}
-      <Avatar></Avatar>
+      <Avatar url={user.avatar}></Avatar>
       <Box>
-        <Info></Info>
-        <ButtonCard>Following</ButtonCard>
+        <Info tweets={user.tweets} followers={followers}></Info>
+        <ButtonCard isFollow={isFollow}>Following</ButtonCard>
       </Box>
     </CardMain>
   );
