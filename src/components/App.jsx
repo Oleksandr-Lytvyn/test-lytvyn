@@ -36,8 +36,6 @@ export const App = () => {
     fetchData();
   }, []);
 
-  console.log(users);
-
   return (
     <>
       {users.map(user => {
