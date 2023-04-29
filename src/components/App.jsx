@@ -11,7 +11,7 @@ export const App = () => {
   const fetchData = async () => {
     try {
       const { data } = await axios.get(
-        `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=2`
+        `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
       );
       page += 1;
       setUsers(data);

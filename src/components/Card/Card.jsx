@@ -1,4 +1,3 @@
-// import { Button } from 'components/Button/Button';
 import { Box, CardMain } from './Card.styled';
 import { ButtonCard } from 'components/Button/Button.styled';
 import { Avatar } from 'components/Avatar/Avatar';
@@ -7,7 +6,6 @@ import { useState } from 'react';
 
 export const Card = ({ user }) => {
   const checkFollow = JSON.parse(localStorage.getItem(user.id));
-  // console.log(checkFollow);
   const [isFollow, setIsFollow] = useState(checkFollow);
 
   let followers = user.followers;
@@ -22,7 +20,6 @@ export const Card = ({ user }) => {
 
   return (
     <CardMain>
-      {/* <Boy></Boy> */}
       <Avatar url={user.avatar}></Avatar>
       <Box>
         <Info tweets={user.tweets} followers={followers}></Info>

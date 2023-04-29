@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import elipse from '../../images/Ellipse-crop.png';
+
 export const AvatarWrapper = styled.div`
   margin-bottom: 26px;
   border-radius: 20px;
@@ -33,7 +35,7 @@ export const AvatarImg = styled.div`
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: url(${props => props.url});
-  background-position: -5px 0;
-  /* background-size: cover; */
+  background-image: url(${elipse}), url(${props => props.url});
+  background-size: cover, 80%;
+  background-position: center;
 `;
