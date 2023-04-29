@@ -14,6 +14,18 @@ export const App = () => {
         `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=2`
       );
       page += 1;
+      setUsers(data);
+    } catch (error) {
+      return error;
+    }
+  };
+
+  const nextPage = async () => {
+    try {
+      const { data } = await axios.get(
+        `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
+      );
+      page += 1;
       setUsers([...users, ...data]);
     } catch (error) {
       return error;
@@ -31,7 +43,7 @@ export const App = () => {
       {users.map(user => {
         return <Card user={user} key={user.id}></Card>;
       })}
-      <button type="button" onClick={fetchData}>
+      <button type="button" onClick={nextPage}>
         load more
       </button>
     </>

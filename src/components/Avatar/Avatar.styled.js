@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import boyImage from '../../images/Boy.jpg';
 
 export const AvatarWrapper = styled.div`
   margin-bottom: 26px;
