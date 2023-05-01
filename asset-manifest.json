@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/test-lytvyn/static/css/main.fe031869.css",
-    "main.js": "/test-lytvyn/static/js/main.093b3fe0.js",
+    "main.js": "/test-lytvyn/static/js/main.95760221.js",
     "static/media/picture.png": "/test-lytvyn/static/media/picture.032662a2a907475127d7.png",
     "static/media/Logo.svg": "/test-lytvyn/static/media/Logo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/test-lytvyn/index.html",
     "main.fe031869.css.map": "/test-lytvyn/static/css/main.fe031869.css.map",
-    "main.093b3fe0.js.map": "/test-lytvyn/static/js/main.093b3fe0.js.map"
+    "main.95760221.js.map": "/test-lytvyn/static/js/main.95760221.js.map"
   },
   "entrypoints": [
     "static/css/main.fe031869.css",
-    "static/js/main.093b3fe0.js"
+    "static/js/main.95760221.js"
   ]
 }
