@@ -1,40 +1,40 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import { useEffect, useState } from 'react';
 
 import { Card } from '../Card/Card';
 
-let page = 1;
+// let page = 1;
 
-export const TweetsList = () => {
-  const [users, setUsers] = useState([]);
+export const TweetsList = ({ users, nextPage }) => {
+  // const [users, setUsers] = useState([]);
 
-  const fetchData = async () => {
-    try {
-      const { data } = await axios.get(
-        `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
-      );
-      page += 1;
-      setUsers(data);
-    } catch (error) {
-      return error;
-    }
-  };
+  // const fetchData = async () => {
+  //   try {
+  //     const { data } = await axios.get(
+  //       `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
+  //     );
+  //     page += 1;
+  //     setUsers(data);
+  //   } catch (error) {
+  //     return error;
+  //   }
+  // };
 
-  const nextPage = async () => {
-    try {
-      const { data } = await axios.get(
-        `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
-      );
-      page += 1;
-      setUsers([...users, ...data]);
-    } catch (error) {
-      return error;
-    }
-  };
+  // const nextPage = async () => {
+  //   try {
+  //     const { data } = await axios.get(
+  //       `https://63bf12e0e348cb07622066df.mockapi.io/users?page=${page}&limit=3`
+  //     );
+  //     page += 1;
+  //     setUsers([...users, ...data]);
+  //   } catch (error) {
+  //     return error;
+  //   }
+  // };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   return (
     <div className="box">
