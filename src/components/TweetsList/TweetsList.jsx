@@ -37,13 +37,13 @@ export const TweetsList = () => {
   }, []);
 
   return (
-    <>
+    <div className="box">
       {users.map(user => {
         return <Card user={user} key={user.id}></Card>;
       })}
       <button type="button" onClick={nextPage}>
         load more
       </button>
-    </>
+    </div>
   );
 };

@@ -3,7 +3,7 @@ import { TweetsList } from '../components/TweetsList/TweetsList';
 
 export const Tweets = () => {
   return (
-    <div>
+    <div className="box">
       <TweetsList />
       <nav>
         <button>
