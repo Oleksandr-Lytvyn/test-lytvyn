@@ -8,6 +8,7 @@ let page = 1;
 
 export const Tweets = () => {
   const [users, setUsers] = useState([]);
+  const [loadMore, setLoadMore] = useState(true);
 
   const fetchData = async () => {
     try {
@@ -16,6 +17,7 @@ export const Tweets = () => {
       );
       page += 1;
       setUsers(data);
+      setLoadMore(true);
     } catch (error) {
       return error;
     }
@@ -30,6 +32,7 @@ export const Tweets = () => {
         user => localStorage.getItem(user.id) === 'true'
       );
       setUsers(result);
+      setLoadMore(false);
     } catch (error) {
       return error;
     }
@@ -43,8 +46,8 @@ export const Tweets = () => {
       const result = data.filter(
         user => localStorage.getItem(user.id) !== 'true'
       );
-      console.log(result);
       setUsers(result);
+      setLoadMore(false);
     } catch (error) {
       return error;
     }
@@ -68,7 +71,7 @@ export const Tweets = () => {
   return (
     <div className="box">
       <Filter following={fetchFollowing} follow={fetchFollow} all={fetchData} />
-      <TweetsList users={users} nextPage={nextPage} />
+      <TweetsList users={users} nextPage={nextPage} loadMore={loadMore} />
       <nav>
         <button>
           <Link to="/">back</Link>
