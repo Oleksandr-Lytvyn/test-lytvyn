@@ -1,7 +1,7 @@
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
-export const Filter = ({ following, follow }) => {
+export const Filter = ({ following, follow, all }) => {
   const options = ['show all', 'follow', 'followings'];
   const defaultOption = options[0];
   return (
@@ -16,7 +16,7 @@ export const Filter = ({ following, follow }) => {
             follow();
             break;
           case 'show all':
-            console.log('followings');
+            all();
             break;
 
           default:

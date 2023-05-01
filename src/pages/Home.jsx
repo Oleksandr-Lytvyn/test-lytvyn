@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { TweetsList } from '../components/TweetsList/TweetsList';
 
 export const Home = () => {
   return (

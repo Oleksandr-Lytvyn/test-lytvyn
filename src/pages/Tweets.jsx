@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { TweetsList } from '../components/TweetsList/TweetsList';
 import { Filter } from 'components/Filter/Filter';
-import { async } from 'q';
 
 let page = 1;
 
@@ -30,7 +29,6 @@ export const Tweets = () => {
       const result = data.filter(
         user => localStorage.getItem(user.id) === 'true'
       );
-      console.log(result);
       setUsers(result);
     } catch (error) {
       return error;
@@ -69,7 +67,7 @@ export const Tweets = () => {
   }, []);
   return (
     <div className="box">
-      <Filter following={fetchFollowing} follow={fetchFollow} />
+      <Filter following={fetchFollowing} follow={fetchFollow} all={fetchData} />
       <TweetsList users={users} nextPage={nextPage} />
       <nav>
         <button>

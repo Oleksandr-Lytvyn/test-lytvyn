@@ -4,7 +4,6 @@ export const Info = ({ tweets, followers }) => {
   const numberBegore = followers.toString().slice(0, 3);
   const numberAfter = followers.toString().slice(3, followers.length);
   const followersDot = `${numberBegore}.${numberAfter}`;
-  console.log(numberBegore, numberAfter);
   return (
     <InfoBoard>
       <p>{tweets} tweets</p>
